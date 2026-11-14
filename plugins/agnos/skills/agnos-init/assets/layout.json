@@ -1,0 +1,14 @@
+{
+  "folder": "agnos-process",
+  "subfolders": ["1.requirements", "2.architecture", "3.plan", "_sessionstate"],
+  "index": "process.idx.md",
+  "sessionState": "_sessionstate/session.yaml",
+  "metricsLog": "_sessionstate/METRICS_LOG.md",
+  "folderReadme": "readme.md",
+  "projectRules": "project-rules.md",
+  "perfCenterPage": "PERF-CENTER.html",
+  "guide": "AGNOS-GETTING-STARTED.md",
+  "version": "VERSION.txt",
+  "legacyFolder": "process",
+  "legacyIndex": "INDEX.idx.md"
+}

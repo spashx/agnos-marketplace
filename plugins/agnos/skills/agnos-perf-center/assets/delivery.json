@@ -1,0 +1,18 @@
+{
+  "_comment": "The settings of the Delivery tab. Change a number here, never in the code.",
+  "tiers": ["S", "M", "L"],
+  "names": {"S": "small task", "M": "medium task", "L": "large task"},
+  "points": {"S": 1, "M": 3, "L": 8},
+  "reworkDays": 14,
+  "monthAfterWeeks": 12,
+  "defaultPeriods": ["last-7", "previous-7"],
+  "periods": [
+    {"key": "last-7", "label": "Last 7 days", "days": 7, "offset": 0},
+    {"key": "previous-7", "label": "The 7 days before", "days": 7, "offset": 7},
+    {"key": "last-14", "label": "Last 14 days", "days": 14, "offset": 0},
+    {"key": "previous-14", "label": "The 14 days before", "days": 14, "offset": 14},
+    {"key": "last-30", "label": "Last 30 days", "days": 30, "offset": 0},
+    {"key": "previous-30", "label": "The 30 days before", "days": 30, "offset": 30},
+    {"key": "last-90", "label": "Last 90 days", "days": 90, "offset": 0}
+  ]
+}

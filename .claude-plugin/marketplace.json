@@ -1,0 +1,15 @@
+{
+  "name": "agnos-marketplace",
+  "description": "The AGNOS software engineering process for agentic development.",
+  "owner": {
+    "name": "spashx"
+  },
+  "plugins": [
+    {
+      "name": "agnos",
+      "description": "AGNOS, a lightweight software engineering process for agentic development: requirements, architecture decisions, plans and tasks with full traceability, and the skills that run them.",
+      "version": "3.5.0",
+      "source": "./plugins/agnos"
+    }
+  ]
+}

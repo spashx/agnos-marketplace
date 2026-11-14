@@ -1,0 +1,4 @@
+# Bash scripts and init's templates keep their line ending on every checkout, and the vendored graph library is compared with its recorded hash.
+*.sh text eol=lf
+plugins/agnos/skills/agnos-init/assets/templates/* text eol=lf
+plugins/agnos/skills/agnos-perf-center/scripts/vendor/** -text

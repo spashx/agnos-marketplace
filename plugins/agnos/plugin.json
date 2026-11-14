@@ -1,0 +1,17 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agnos",
+  "description": "AGNOS, a lightweight software engineering process for agentic development: requirements, architecture decisions, plans and tasks with full traceability, and the skills that run them.",
+  "author": {
+    "name": "spashx"
+  },
+  "license": "AGPL-3.0-only",
+  "keywords": [
+    "process",
+    "requirements",
+    "traceability",
+    "adr",
+    "planning"
+  ],
+  "version": "3.5.0"
+}

@@ -1,0 +1,86 @@
+{
+  "_comment": "agnos-perf-center call graph languages: extensions, grammar wheel and module, query file, scope separator. An extension belongs to one language.",
+  "_scopes": "scopes: the box kind, namespace or class, of each scope node type of the grammar; a language without scopes gives functions without box.",
+  "c": {
+    "extensions": [".c"],
+    "package": "tree-sitter-c",
+    "module": "tree_sitter_c",
+    "query": "c.scm",
+    "separator": "::",
+    "scopes": {}
+  },
+  "cpp": {
+    "extensions": [".cc", ".cpp", ".cxx", ".c++", ".h", ".hh", ".hpp", ".hxx", ".h++", ".inl", ".ipp", ".tpp"],
+    "package": "tree-sitter-cpp",
+    "module": "tree_sitter_cpp",
+    "query": "cpp.scm",
+    "separator": "::",
+    "scopes": {
+      "namespace_definition": "namespace",
+      "class_specifier": "class",
+      "struct_specifier": "class",
+      "union_specifier": "class"
+    }
+  },
+  "csharp": {
+    "extensions": [".cs"],
+    "package": "tree-sitter-c-sharp",
+    "module": "tree_sitter_c_sharp",
+    "query": "csharp.scm",
+    "separator": ".",
+    "scopes": {
+      "namespace_declaration": "namespace",
+      "compilation_unit": "namespace",
+      "class_declaration": "class",
+      "struct_declaration": "class",
+      "interface_declaration": "class",
+      "record_declaration": "class"
+    }
+  },
+  "java": {
+    "extensions": [".java"],
+    "package": "tree-sitter-java",
+    "module": "tree_sitter_java",
+    "query": "java.scm",
+    "separator": ".",
+    "scopes": {
+      "program": "namespace",
+      "class_declaration": "class",
+      "interface_declaration": "class",
+      "enum_declaration": "class",
+      "record_declaration": "class"
+    }
+  },
+  "javascript": {
+    "extensions": [".js", ".jsx", ".mjs", ".cjs"],
+    "package": "tree-sitter-javascript",
+    "module": "tree_sitter_javascript",
+    "query": "javascript.scm",
+    "separator": ".",
+    "scopes": {
+      "class_declaration": "class"
+    }
+  },
+  "python": {
+    "extensions": [".py", ".pyw"],
+    "package": "tree-sitter-python",
+    "module": "tree_sitter_python",
+    "query": "python.scm",
+    "separator": ".",
+    "scopes": {
+      "class_definition": "class"
+    }
+  },
+  "rust": {
+    "extensions": [".rs"],
+    "package": "tree-sitter-rust",
+    "module": "tree_sitter_rust",
+    "query": "rust.scm",
+    "separator": "::",
+    "scopes": {
+      "mod_item": "namespace",
+      "impl_item": "class",
+      "trait_item": "class"
+    }
+  }
+}

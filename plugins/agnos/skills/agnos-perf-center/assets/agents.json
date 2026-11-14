@@ -1,0 +1,25 @@
+{
+  "$comment": "An identity whose name or e-mail matches one of these regular expressions (ignoring case) is an agent; any other is a human. Edit this file to class another assistant; no code changes.",
+  "name": [
+    "^claude\\b",
+    "\\bcopilot\\b",
+    "^codex\\b",
+    "^gemini\\b",
+    "^devin\\b",
+    "^cursor( agent)?$",
+    "^aider\\b",
+    "^openhands\\b",
+    "^amazon q\\b",
+    "\\[bot\\]$"
+  ],
+  "email": [
+    "^noreply@anthropic\\.com$",
+    "^copilot@",
+    "^noreply@openai\\.com$",
+    "^devin-ai-integration",
+    "\\[bot\\]@users\\.noreply\\.github\\.com$",
+    "^noreply@cursor\\.(com|sh)$",
+    "^aider@aider\\.chat$",
+    "^openhands@all-hands\\.dev$"
+  ]
+}

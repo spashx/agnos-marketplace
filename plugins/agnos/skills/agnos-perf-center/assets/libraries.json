@@ -1,0 +1,23 @@
+{
+  "_comment": "The libraries the page loads from cdnjs. To change a version, change its version, URL and integrity together; the integrity is the sha512 the cdnjs API publishes (https://api.cdnjs.com/libraries/<name>/<version>?fields=sri).",
+  "libraries": [
+    {
+      "name": "Cytoscape.js",
+      "version": "3.30.2",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.30.2/cytoscape.min.js",
+      "integrity": "sha512-EY3U1MWdgKx0P1dqTE4inlKz2cpXtWpsR1YUyD855Hs6RL/A0cyvrKh60EpE8wDZ814cTe1KgRK+sG0Rn792vQ==",
+      "licence": "MIT",
+      "global": "cytoscape",
+      "use": "the Graph view"
+    },
+    {
+      "name": "Apache ECharts",
+      "version": "6.1.0",
+      "url": "https://cdnjs.cloudflare.com/ajax/libs/echarts/6.1.0/echarts.min.js",
+      "integrity": "sha512-Uyq/AgtqFM4vT+unIGTDr4wMJDTUK9O5w2PXMQeBCSR8koqHpVz+qBmcQ+9Oeo5H+EmvT4pp/5QrsqhIbyjHTQ==",
+      "licence": "Apache-2.0",
+      "global": "echarts",
+      "use": "the Delivery charts and the Quality radar"
+    }
+  ]
+}
