@@ -2,15 +2,23 @@
   "name": "agnos",
   "description": "AGNOS, a lightweight software engineering process for agentic development: requirements, architecture decisions, plans and tasks with full traceability, and the skills that run them.",
   "author": {
-    "name": "spashx"
+    "name": "spashx",
+    "url": "https://github.com/spashx"
   },
+  "homepage": "https://github.com/spashx/agnos-lightweight-process",
+  "repository": "https://github.com/spashx/agnos-lightweight-process",
   "license": "AGPL-3.0-only",
   "keywords": [
     "process",
     "requirements",
     "traceability",
     "adr",
-    "planning"
+    "planning",
+    "agentic",
+    "ears",
+    "claude-code",
+    "copilot"
   ],
-  "version": "3.6.0"
+  "version": "3.6.1",
+  "logo": "assets/agnos.svg"
 }

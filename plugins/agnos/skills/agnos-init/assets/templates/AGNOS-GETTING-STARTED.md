@@ -64,7 +64,7 @@ Identifiers appear as plain text in every related process document, and as comme
 **Keep the process loaded.** The process is a skill: once invoked it lives only in the conversation, and the tool does
 not reload it. A compaction can cut it (Claude Code keeps only the first 5,000 tokens of a skill after an automatic
 compaction, and the process is longer) or drop it, with no warning. After any compaction, ask the agent to invoke
-`agnos-instructions` again. The README of the AGNOS plugin details each tool's behaviour and the risks.
+`agnos-instructions` again.
 
 **Pick a trigram.** Three uppercase letters naming the functional area you are about to work on: `USR` for user
 management, `EXP` for export, `PAY` for payments. It goes in every artifact ID, so pick one you can live with.
@@ -639,6 +639,8 @@ then runs `git add .` and `git commit`.
 
 ```text
 feat(EXP): ADR-EXP-001/TASK-EXP-001 add streaming CSV order exporter
+
+Co-Authored-By: Claude Code/Claude Opus 5.5 <noreply@anthropic.com>
 ```
 
 Without an ADR it would be `feat(EXP): TASK-EXP-002 expose GET /orders/export`. The `<type>` is inferred by the
@@ -717,7 +719,7 @@ Coverage is file-based: **covered** means a source file cites the requirement it
 only a linked task, decision, ADR or feature.
 
 > Give `--sources` the folders that should carry IDs: code, tests, build files, CI. Never a documentation folder, nor
-> the project's root, which holds this guide: its example IDs would show up as `undefined`.
+> the project's root, whose `agnos-process/` holds this guide: its example IDs would show up as `undefined`.
 
 ---
 

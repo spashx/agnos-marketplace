@@ -4,6 +4,21 @@ All notable changes to this repository are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [3.6.1]
+
+### Added
+- `agnos-meta-release` writes the plugin's author URL, homepage, repository and keywords in both manifests and in the catalogue's plugin entry, with the license and the category `software development` in that entry
+- `agnos-meta-release` writes the plugin logo, `plugins/agnos/assets/agnos.svg`, generated from the brand colours of the perf center's tokens and declared as `logo` in both manifests
+- `agnos-meta-plugin-proof` strict validation counts a validation whose only warning is the unknown field `logo` as passed, and its detail says so
+
+### Changed
+- `agnos-meta-release` catalogue: the description and the version move into a `metadata` block, and no description stays at its root
+- `README.md` installs the plugin per tool: command lines for Claude Code and GitHub Copilot CLI, and the steps of each app and VS Code extension; it tells a plugin user not to clone the repository
+
+### Fixed
+- `agnos-meta-release` delivers the README's overview image from `assets/agnos-overview.png`, where the repository keeps it
+- `AGNOS-GETTING-STARTED.md` corrected: the commit example shows the co-author trailer that `commit-task` writes, the `--sources` note says the project's root holds `agnos-process/`, and the pointer to the plugin README is removed
+
 ## [3.6.0]
 
 ### Added

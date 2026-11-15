@@ -1,15 +1,38 @@
 {
   "name": "agnos-marketplace",
-  "description": "The AGNOS software engineering process for agentic development.",
   "owner": {
-    "name": "spashx"
+    "name": "spashx",
+    "email": "25369377+spashx@users.noreply.github.com"
+  },
+  "metadata": {
+    "description": "The AGNOS software engineering process for agentic development.",
+    "version": "3.6.1"
   },
   "plugins": [
     {
       "name": "agnos",
+      "version": "3.6.1",
       "description": "AGNOS, a lightweight software engineering process for agentic development: requirements, architecture decisions, plans and tasks with full traceability, and the skills that run them.",
-      "version": "3.6.0",
-      "source": "./plugins/agnos"
+      "author": {
+        "name": "spashx",
+        "url": "https://github.com/spashx"
+      },
+      "homepage": "https://github.com/spashx/agnos-lightweight-process",
+      "repository": "https://github.com/spashx/agnos-lightweight-process",
+      "license": "AGPL-3.0-only",
+      "keywords": [
+        "process",
+        "requirements",
+        "traceability",
+        "adr",
+        "planning",
+        "agentic",
+        "ears",
+        "claude-code",
+        "copilot"
+      ],
+      "source": "./plugins/agnos",
+      "category": "software development"
     }
   ]
 }
