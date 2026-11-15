@@ -69,6 +69,8 @@ When the user asks to start a session, run these steps in order before any task:
    self-improvement follow-up** by invoking the `agnos-self-improvement` skill: present 1-3 candidate
    themes each citing the counter(s) that motivate it. Do NOT start implementing until the user confirms.
 
+4) **Recommend a context reset**: WHEN steps 1-3 are done and no task remains, tell the user to run the harness's context-reset command (`/clear` on Claude Code and GitHub Copilot).
+
 ## MANDATORY RULES FOR ALL ARTIFACTS
 
 ### MANDATORY UNIQUE IDENTIFIERS

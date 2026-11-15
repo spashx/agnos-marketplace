@@ -776,6 +776,9 @@ and waits for your confirmation before drafting anything. The rules it adds go i
 names: the agent reads that file in every conversation, and an update of the plugin never touches it. It never edits
 the plugin's own files.
 
+**Then a context reset.** Once the summary, the metrics and any follow-up are done and no task remains, the agent tells
+you to run the context-reset command of your tool: `/clear` on Claude Code and GitHub Copilot.
+
 > **Long sessions:** past about ten tasks, or when replies start losing earlier context, the agent writes a checkpoint
 > to `agnos-process/3.plan/` (completed IDs, open IDs, blockers, key decisions) and suggests starting fresh. Do not push
 > through a saturated session: take the checkpoint.
@@ -796,7 +799,7 @@ One row per stage. This is the whole human side of a session.
 | 6. Test | `Run the tests.` | Gherkin-named tests, run under `session.platform` |
 | 7. Commit | *(agent proposes)* `commit-task TASK-EXP-001 ADR-EXP-001 <description>` | `feat(EXP): ADR-EXP-001/TASK-EXP-001 <description>` |
 | 8. Trace | `Generate the traceability matrix for src and tests.` | `PERF-CENTER.html` — coverage, quality score and grade, graph down to functions |
-| 9. Close | `End of session.` | Summary report with deferred work, blockers and friction metrics |
+| 9. Close | `End of session.` | Summary report with deferred work, blockers and friction metrics, then a reminder to run `/clear` |
 
 Corrections at any point are just sentences: *"RQ-EXP-002 should be 20 MB, not 50."* — *"Drop the retry logic, it's
 not in the acceptance criteria."* — *"Re-tier that as M, it needs a new file."*

@@ -6,12 +6,12 @@
   },
   "metadata": {
     "description": "The AGNOS software engineering process for agentic development.",
-    "version": "3.6.1"
+    "version": "3.6.2"
   },
   "plugins": [
     {
       "name": "agnos",
-      "version": "3.6.1",
+      "version": "3.6.2",
       "description": "AGNOS, a lightweight software engineering process for agentic development: requirements, architecture decisions, plans and tasks with full traceability, and the skills that run them.",
       "author": {
         "name": "spashx",
