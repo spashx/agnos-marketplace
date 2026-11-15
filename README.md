@@ -1,10 +1,7 @@
-# AGNOS — Lightweight Software Engineering Process for Agentic AI
-
-**AGNOS is an ultra-lightweight engineering process for tiger teams and solo experts who build
-software with agentic AI.
+# AGNOS - Agentic efficiency by traceability
 
 AGNOS is a lightweight, tooled process for *AI-native* development teams (pods of a few people, or solo). Requirements, decisions, tasks, code and commits carry the same identifiers: the work stays explainable.
-AGNOS It puts two things first — **end-to-end traceability** and **deterministic indexing** — so that AI-driven development stays controllable as the codebase grows.
+AGNOS puts two things first — **end-to-end traceability** and **deterministic indexing** — so that AI-driven development stays controllable as the codebase grows.
 The process can be monitored with the built-in AGNOS Performance Center application.
 
 
@@ -30,7 +27,7 @@ COMPATIBILITY.md the tools and systems checked, CONTRIBUTING.md the map of this 
 | **`agnos-self-improvement`** | Turns the session's friction metrics into rules: the improvement goes into the rules file the project declares, one theme per iteration, within a line budget its scripts measure. |
 | **`agnos-perf-center`** | Generates a complete application, opened from disk, to monitor the process's execution on a project and explore its traceability matrix — coverage, quality score and grade, interactive graph — down to the implementing functions and their call graph, and, with `--history`, who (humans and agents) changed each requirement and its code over time. |
 
-**Delivered as:** one marketplace holding the plugin `agnos`, for Claude Code, GitHub Copilot and OpenAI Codex.
+**Delivered as:** one marketplace holding the plugin `agnos`, for Claude Code and GitHub Copilot.
 
 ---
 
@@ -40,7 +37,7 @@ COMPATIBILITY.md the tools and systems checked, CONTRIBUTING.md the map of this 
 
 | Need | Windows | Linux, macOS | Used by |
 |---|---|---|---|
-| An AI coding tool | Claude Code, GitHub Copilot (CLI or VS Code) or OpenAI Codex | The same | Every skill |
+| An AI coding tool | Claude Code or GitHub Copilot (CLI or VS Code) | The same | Every skill |
 | git | Git for Windows | git | `agnos-git-workflow`; `agnos-perf-center --history` |
 | A shell for the scripts | Windows PowerShell 5.1, built into Windows; PowerShell 7 is not needed | bash, with the usual `grep`, `awk`, `od` and `cmp` | `agnos-init`, `agnos-index`, `agnos-git-workflow` |
 | Python 3.9 or later, standard library only | `python` | `python3` | `agnos-perf-center` only |

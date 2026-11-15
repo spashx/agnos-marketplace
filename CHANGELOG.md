@@ -4,6 +4,14 @@ All notable changes to this repository are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [3.6.0]
+
+### Added
+- `agnos-meta-release` delivers a README in the plugin's folder, the one VS Code shows for the installed plugin
+
+### Removed
+- The marketplace serves Claude Code and GitHub Copilot only: its second catalogue and the documents' mentions of a third tool are withdrawn, to be delivered later
+
 ## [3.5.0]
 
 ### Added
@@ -26,7 +34,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - A Tier S task needs no written plan; Tier M and L tasks keep theirs, as the tier table of the instructions and of `AGNOS-GETTING-STARTED.md` states
 - `README.md` explains what clear, automatic and manual compaction do to the process in Claude Code and GitHub Copilot, the risks and what to do
 - `AGNOS-GETTING-STARTED.md` states the shared entry-point block, one session per conversation and the invocation again after a compaction
-- `agnos-meta-website` site: its English text aligned on the French, OpenAI Codex support stated as coming, French typos corrected
+- `agnos-meta-website` site: its English text aligned on the French, French typos corrected
 - `agnos-meta-website` site: quotes the renamed demo, its titles, its ADR excerpt and its commit
 
 ### Removed
@@ -71,7 +79,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 - `agnos-meta-release` checks the four manifests and catalogues by script, with no AI tool: required fields, plugin folders, the same name, version and description everywhere
 - `agnos-meta-release` console: the problems, the lines to read, the mentions and the IDs outside comments, each with its file and line, and a last line giving `exit=` whatever the outcome
 - `agnos-meta-plugin-proof` maintainer skill: proves a built marketplace by a real install in isolated Claude Code and GitHub Copilot configurations, on request with questions to their models and the delivered suites on Linux, publishing nothing
-- `agnos-meta-release` writes a marketplace holding the plugin `agnos`, with its generated skill `agnos-process` and its agents, for Claude Code, GitHub Copilot and OpenAI Codex
+- `agnos-meta-release` writes a marketplace holding the plugin `agnos`, with its generated skill `agnos-process` and its agents, for Claude Code and GitHub Copilot
 - `agnos-meta-release` maintainer skill: rehearses a release in a folder, from a commit, without AGNOS's own IDs, and proves it behaves as the repository does, publishing nothing
 - `agnos-index` and `agnos-perf-center` show on their output line the time the run took, never written into the generated files
 - `agnos-meta-qa` maintainer skill: a code quality report on request, as normalised JSON from pinned analysers, blocking
