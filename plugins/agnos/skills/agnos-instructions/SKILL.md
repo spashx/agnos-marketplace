@@ -81,8 +81,8 @@ The unique identifier shall be in the format: `<TYPE>-<TRI>-<NNN>` where:
   - `<NNN>` is a zero-padded sequence number (e.g. 001, 002, etc) that is incremented for each new artifact of the same type and feature.
 
 ### MANDATORY TRACEABILITY
-- EACH ARTIFACT SHALL reference all related artifacts by their unique identifier.
-- Requirement IDs SHALL appear in ALL related artefacts: feature files, ADR files, Plan files, task descriptions, file headers, class/function doc comments, those of test functions included.
+- EACH ARTIFACT SHALL reference ALL related artifacts by their unique identifier.
+- Requirement IDs SHALL appear in ALL related artefacts: feature files, ADR files, Plan files, task descriptions, file headers, class AND function doc comments, those of test functions included.
 - The user SHALL be able to grep any requirement ID and find all related code and documentation.
 - An artifact with no traceable requirement ID is considered incomplete and SHALL NOT be delivered.
 - ALWAYS put traceability references into comments, never as plain text, in every file outside agnos-process/; the artifact files of agnos-process/ hold their own IDs as plain text.
@@ -249,9 +249,7 @@ Brief description of the feature's purpose and scope.
   ```
 - Every decision in ADR SHALL have a unique identifier in the format `DEC-<TRI>-<NNN>` (e.g., `DEC-USR-001`), consistent with the universal ID schema, that can be referenced in plans, tasks, and source code. Each decision SHALL be declared as a `### DEC-<TRI>-<NNN>: <title>` heading under `## Decision`, so that it is indexed.
 - The `## Diagram` section SHALL hold at least two Mermaid diagrams, scoped to the ADR and the requirements it cites:
-  a static one showing the domain's entity types and their relations (default: UML class diagram, `classDiagram`),
-  and a dynamic one showing their interactions (default: UML sequence diagram, `sequenceDiagram`).
-  Other diagrams MAY be added when they make the proposed technical solution easier to grasp.
+  a static one showing the domain's entity types and a dynamic one showing their interactions (class and sequence diagrams, state diagrams...). Other diagrams based on other mermaid syntax MAY be added to help the human understand the proposed technical solution.
 - The design system itself SHALL be captured as an ADR (token structure, tiers, generation/verification mechanism). Every subsequent UI-affecting ADR SHALL reference it.
 
 ### Traceability in ADRs and DEC
@@ -318,7 +316,6 @@ Tag every task with a tier before starting. The tier determines which steps are 
 
 ### Plan/Task File Template
 
-
 Every plan file in `agnos-process/3.plan/` SHALL follow this structure:
 
 ```
@@ -355,7 +352,7 @@ This plan implements the tasks in the format specified below.
 - ALL generated code SHALL comply with **SOLID** principles (Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, Dependency Inversion).
 - **No duplicated/magic literals (strings or numbers).** EVERY constant SHALL be declared as a named class-level or method-level constant. 
 - **UI code**: EVERY visual constant (color, spacing, size, alpha, font metric) SHALL be initialized from design-system tokens. Local named constants MAY alias a token for readability, but SHALL NOT hold a raw visual value.
-- Code SHALL contains traceable references to the requirement ID(s) and ADR decisions ID(s) it implements in the form of comments or docstrings. for C/C++ add references into the implementation file instead of header file.
+- Code SHALL contains traceable references to the requirement ID(s) and ADR decisions ID(s) it implements in the form of comments or docstrings. for C/C++, add references into the implementation file (.c, .cpp) instead of the header file (.h, .hpp).
 
 
 ### Testing

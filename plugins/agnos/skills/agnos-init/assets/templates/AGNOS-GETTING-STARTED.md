@@ -798,7 +798,7 @@ One row per stage. This is the whole human side of a session.
 | 5. Implement | `TASK-EXP-001 approved. Implement it.` | Source with ID comments, named constants |
 | 6. Test | `Run the tests.` | Gherkin-named tests, run under `session.platform` |
 | 7. Commit | *(agent proposes)* `commit-task TASK-EXP-001 ADR-EXP-001 <description>` | `feat(EXP): ADR-EXP-001/TASK-EXP-001 <description>` |
-| 8. Trace | `Generate the traceability matrix for src and tests.` | `PERF-CENTER.html` — coverage, quality score and grade, graph down to functions |
+| 8. Perf Center | `Generate the AGNOS Performance Center for src and tests.` — options: `--call-graph` (functions and calls), `--history` (who changed what, deliveries; `--history-since 6.months`) | `PERF-CENTER.html` — Performance Center: matrix, coverage, quality score and grade, graph; call graph and history with their options |
 | 9. Close | `End of session.` | Summary report with deferred work, blockers and friction metrics, then a reminder to run `/clear` |
 
 Corrections at any point are just sentences: *"RQ-EXP-002 should be 20 MB, not 50."* — *"Drop the retry logic, it's

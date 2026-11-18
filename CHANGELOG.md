@@ -4,11 +4,23 @@ All notable changes to this repository are documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
+## [4.0.0]
+
+### Changed
+- `CONTRIBUTING.md` rewritten: a pull request is accepted only if it was made with AGNOS, with the steps that make a change so, the grounds on which a reviewer declines a pull request, and the branches: `feature/<TRI>`, `dev` (where pull requests land) and `release` (maintainers' snapshots only)
+- AGNOS addresses (process repository, marketplace, Performance Center of the demo) are declared once and checked in the documents by a test; the marketplace manifest names the process repository
+- `README.md` links the Performance Center, the marketplace and the user's guide; the guide names the Performance Center and its options
+
+### Fixed
+- `README.md` overview illustration: `assets/agnos-overview.png` corrected after 3.6.2
+- The instructions' ADR diagram rule presents the class and sequence diagrams as examples of the static and dynamic diagrams, not as fixed UML defaults, and allows other Mermaid diagrams to help the reader
+- The instructions' C/C++ traceability rule names the implementation files (`.c`, `.cpp`) where references go, and the headers (`.h`, `.hpp`) they are not put in
+- The demo's product runs from its README: the service starts with `python -m roombook` on the rooms of `service/rooms.json`, and the web interface and the command-line tool show them
+
 ## [3.6.2]
 
 ### Changed
 - `README.md` overview illustration replaced: `assets/agnos-overview.png` is the new image, and its SVG sources stay in `assets/`, not delivered with the plugin
-- END SESSION step 4 of the instructions recommends a context reset: once the steps are done and no task remains, the agent tells you to run the context-reset command (`/clear` on Claude Code and GitHub Copilot)
 
 ## [3.6.1]
 

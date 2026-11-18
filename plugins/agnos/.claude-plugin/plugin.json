@@ -5,8 +5,8 @@
     "name": "spashx",
     "url": "https://github.com/spashx"
   },
-  "homepage": "https://github.com/spashx/agnos-lightweight-process",
-  "repository": "https://github.com/spashx/agnos-lightweight-process",
+  "homepage": "https://github.com/spashx/agnos",
+  "repository": "https://github.com/spashx/agnos",
   "license": "AGPL-3.0-only",
   "keywords": [
     "process",
@@ -19,6 +19,6 @@
     "claude-code",
     "copilot"
   ],
-  "version": "3.6.2",
+  "version": "4.0.0",
   "logo": "assets/agnos.svg"
 }

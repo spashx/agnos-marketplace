@@ -4,7 +4,7 @@
 
 AGNOS is a lightweight, tooled process for *AI-native* development teams (pods of a few people, or solo). Requirements, decisions, tasks, code and commits carry the same identifiers: the work stays explainable.
 AGNOS puts two things first — **end-to-end traceability** and **deterministic indexing** — so that AI-driven development stays controllable as the codebase grows.
-The process can be monitored with the built-in AGNOS Performance Center application.
+The process can be monitored with the built-in AGNOS Performance Center application: see it on [the demo's Performance Center][perf-center].
 
 
 ![AGNOS overview](assets/agnos-overview.png)
@@ -29,7 +29,7 @@ COMPATIBILITY.md the tools and systems checked, CONTRIBUTING.md the map of this 
 | **`agnos-self-improvement`** | Turns the session's friction metrics into rules: the improvement goes into the rules file the project declares, one theme per iteration, within a line budget its scripts measure. |
 | **`agnos-perf-center`** | Generates a self-contained HTML page, opened from disk, to monitor the process's execution on a project. It explores its traceability matrix — coverage, quality score and grade, interactive graph — down to the implementing functions and their call graph, and, with `--history`, who (humans and agents) changed each requirement and its code over time. |
 
-**Delivered as:** one marketplace holding the plugin `agnos`, for Claude Code and GitHub Copilot.
+**Delivered as:** one marketplace, [the AGNOS marketplace][marketplace], holding the plugin `agnos`, for Claude Code and GitHub Copilot.
 
 ---
 
@@ -67,23 +67,25 @@ The tools and systems AGNOS was checked on are listed in [COMPATIBILITY.md](COMP
 
 | Tool | Commands |
 |---|---|
-| Claude Code | `claude plugin marketplace add https://github.com/spashx/agnos-marketplace`, then `claude plugin install agnos@agnos-marketplace` |
-| GitHub Copilot CLI | `copilot plugin marketplace add https://github.com/spashx/agnos-marketplace`, then `copilot plugin install agnos@agnos-marketplace` |
+| Claude Code | `claude plugin marketplace add spashx/agnos-marketplace`, then `claude plugin install agnos@agnos-marketplace` |
+| GitHub Copilot CLI | `copilot plugin marketplace add spashx/agnos-marketplace`, then `copilot plugin install agnos@agnos-marketplace` |
+
+`spashx/agnos-marketplace` is the GitHub repository of [the AGNOS marketplace][marketplace].
 
 **1.2 Claude Code app or VS Code extension**
 - In Claude chat, type `/`, then choose Manage plugins, then select Marketplaces
-- Add the url of the agnos marketplace: https://github.com/spashx/agnos-marketplace
+- Add the url of [the AGNOS marketplace][marketplace]
 - Once added, switch to the Plugins tab, and install the agnos plugin from the available plugins (recommended: "install for you")
 
 **1.3 GitHub Copilot app**
 - In the Customize menu, click "+ Add/Manage marketplaces" at the top right
-- Add the url of the agnos marketplace: https://github.com/spashx/agnos-marketplace
+- Add the url of [the AGNOS marketplace][marketplace]
 - search "agnos" in the search bar and install the plugin
 
 **1.4 GitHub Copilot VS Code extension | VS Code Agent app**
 - From GitHub Copilot chat, go to "Open customizations"
 - Browse/All Sources/Configure Marketplaces
-- Add a marketplace with the URL https://github.com/spashx/agnos-marketplace
+- Add a marketplace with the URL of [the AGNOS marketplace][marketplace]
 - Browse AGNOS marketplace, select the agnos plugin and install
 
 
@@ -96,7 +98,7 @@ between its `AGNOS:BEGIN` and `AGNOS:END` markers. To update a project after AGN
 **Then read `agnos-process/AGNOS-GETTING-STARTED.md`**, which `agnos-init` wrote into your project's process folder, next to
 `agnos-process/VERSION.txt`, which gives the installed AGNOS version: a complete worked session, what you type and what comes back, and the
 concepts behind it. Its source is
-[the skill's template](plugins/agnos/skills/agnos-init/assets/templates/AGNOS-GETTING-STARTED.md).
+[the guide in the AGNOS marketplace][guide].
 
 ### Keeping the process in the agent's context
 
@@ -140,3 +142,8 @@ The block of `CLAUDE.md` and `AGENTS.md` also holds these notes, as HTML comment
 ## License
 
 AGNOS is distributed under the GNU Affero General Public License v3: see [LICENSE.md](LICENSE.md).
+
+<!-- The addresses of assets/links.json, each written once; a test checks them -->
+[marketplace]: https://github.com/spashx/agnos-marketplace
+[guide]: https://github.com/spashx/agnos-marketplace/blob/main/plugins/agnos/skills/agnos-init/assets/templates/AGNOS-GETTING-STARTED.md
+[perf-center]: https://spashx.github.io/agnos-website/demo/PERF-CENTER.html
